@@ -1,5 +1,5 @@
 # Heathen	
-A "choose your own path" game written in Lua	
+A "choose your own path" story-telling game written in Lua	
 
  ## About	
 My program is a choose-your-own path game. This game was written in Lua using the	
