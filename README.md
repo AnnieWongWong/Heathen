@@ -9,7 +9,7 @@ pop up throughout the game. There are eleven possible routes, but there are only
 endings; the first ending is ending in death and the second ending is surviving and escaping. The video demonstrates the main functionalities of the games, such as the hp display, the option buttons, and how the	
 dialogue is played. It also briefs on the main points of the storyline and plays through one possible route	
 that ends in death and half of another route that was supposed to end with exiting the cave, but the demo	
-was cut short due to time limitations.	
+was cut short due to time limitations. The storyline of this version of my game has been modified to be less violent.
 
  ## Challenges	
 I encountered a number of difficulties while writing my program. One was implementing the	
