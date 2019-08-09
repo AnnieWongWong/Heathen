@@ -13,21 +13,21 @@ was cut short due to time limitations. The storyline of this version of my game 
 
  ## Challenges	
 I encountered a number of difficulties while writing my program. One was implementing the	
-scene change function. In the beginning I was planning to write my code in just one .lua file,	
-but I needed a way to start the game from a homescreen. I wanted to cover the game with	
-the homescreen and make the screen disappear once the start button was clicked, but because I	
-wanted to include an instructions and credits button on the home screen as well, I couldn’t do	
+scene change function. In the beginning I was planning on writing all the code in just one .lua file,	
+but I wanted a way to start the game from a homescreen. Initially I thought of covering the game with	
+a homescreen layer and making the layer disappear once the start button was clicked, but because I	
+wanted to include an instructions and credits button on the homescreen as well, I couldn’t do	
 that, so I had use help from the internet (Peach Pellen) which inspired me with the idea of file	
-transitioning. So, when a button on the homescreen is clicked instead of the homescreen	
-just disappearing, the program moves to a different file then reads and uses the code on that	
+transitioning. So, when a button on the homescreen is clicked, instead of a homescreen layer
+just disappearing, the program moves to a different file and reads the code on that	
 file instead.	
 A second problem I encountered was created by the large amount of dialogue. Because	
-there are more than 50 unique lists of dialogue, I needed a way to organize them or make them more clean	
+there are more than 100 unique lines of dialogue, I needed a way to organize them or make them more clean	
 and easy to work with. Originally, I had all of the dialogue collected in a single file, but because it was	
-too long, it was difficult to work with. I fixed this problem by separating the dialogue into	
+too long and slightly hard to organize, it was difficult to work with. I fixed this problem by separating the dialogue into	
 different files, which meant each scene had its own separate file that the program would	
-transition to when necessary. This created a problem because a function created in one file	
+transition and read fromwhen necessary. This created another problem because a function created in one file	
 cannot be called in another, so I had to keep creating different dialogue play functions for	
-each file/scene. To fix this problem I created a “universal” function that could be copied into	
+each file/scene. To fix this problem I created a “universal” function that could be used in	
 each file and the only thing that needed to be changed in that function was the name of the	
 dialogue list that I wanted to be played.
