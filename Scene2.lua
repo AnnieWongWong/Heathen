@@ -68,29 +68,29 @@ localGroup:insert(B)
 
 
 -- Option Buttons
-local function Rect()
-display.newRoundedRect( 240, 80, 230, 30, 5 )
-strokeWidth = 3
-setFillColor()
-alpha=.7
-setStrokeColor( 144, 238, 144)
+-- local function Rect()
+Rect = display.newRoundedRect( 240, 80, 230, 30, 5 )
+Rect.strokeWidth = 3
+Rect:setFillColor()
+Rect.alpha = 0
+Rect:setStrokeColor( 144, 238, 144)
 localGroup:insert(Rect)
-end
+-- end
 
 
 Rect2 = display.newRoundedRect( 240, 150, 230, 30, 5 )
 Rect2.strokeWidth = 3
 Rect2:setFillColor()
-Rect2.alpha= 0
+Rect2.alpha = 0
 Rect2:setStrokeColor( 144, 238, 144)
 localGroup:insert(Rect2)
 
 O1 = display.newText ("Yes, I'm Weak", 240,80,"font/Bucket.ttf",20)
-O1.alpha =0
+O1.alpha = 0
 localGroup:insert(O1)
 
 O2 = display.newText ("Nah, I'm Good", 240,150,"font/Bucket.ttf",20)
-O2.alpha =0
+O2.alpha = 0
 localGroup:insert(O2)
 
 
@@ -103,8 +103,8 @@ local function change2()
 	a=a+1
 end
 	if (a == #Scene2text+1 ) then
-	Rect()
-	Rect2.alpha=.7
+	Rect.alpha = .7
+	Rect2.alpha =.7
 	O1.alpha = 1
 	O2.alpha = 1
 	end
@@ -123,9 +123,9 @@ local function pressYea (event)
 	if event.phase == "ended" then
 	B.text=Yes[1]
 	b=b+1
-	Scene2box.alpha=0
-	Rect()
-	Rect2.alpha= 0
+	Scene2box.alpha = 0
+	Rect.alpha = 0
+	Rect2.alpha = 0
 	O1.alpha = 0
 	O2.alpha = 0
     Scene2bbox.alpha = .7
@@ -157,8 +157,8 @@ local function pressNo (event)
 	B.text=No[1]
 	c=c+1
 	Scene2box.alpha=0
-	Rect()
-	Rect2.alpha= 0
+	Rect.alpha = 0
+	Rect2.alpha = 0
 	O1.alpha = 0
 	O2.alpha = 0
     Scene2bbox.alpha = .7
