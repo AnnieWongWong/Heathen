@@ -2,9 +2,8 @@
 A slightly sarcastic, adventure type, "choose your own path" story-telling game written in Lua
 
  ## About	
-My program is a choose-your-own path game. This game was written in Lua using the	
-SublimeText3 development environment and the Corona SDK simulator. The objective of	
-my game is to escape a cave by choosing between two outcome changing options that	
+My program is a choose-your-own path game. This game was written in Lua using the Corona SDK simulator. The               
+objective of	my game is to escape a cave by choosing between two outcome changing options that	
 pop up throughout your adventure. There are eleven possible routes, but there are only two	
 endings; the first ending is, of course, death and the second ending is surviving and escaping. 
 The video demonstrates how the main functionalities of the games, such as the hp display, the option buttons, and how the	
